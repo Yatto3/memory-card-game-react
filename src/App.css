@@ -1,0 +1,48 @@
+#root{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right ,rgb(240, 208, 45) , rgb(203, 103, 103));
+
+    h1{
+        margin-top: 1vw;
+        font-size: 3.4vw;
+        color: rgba(12, 12, 12, 0.852);
+        height: 5vw;
+        cursor: pointer;
+        text-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+     
+    }
+
+}
+
+.cards-container{
+    margin-top: 5vw;
+    height: 30vw;
+    width: 70%;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    
+    .card-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap: 2vw;
+        padding: 10px;
+    }
+}
+
+.rotate-card{
+    transform: rotateY('180deg');
+}
+
